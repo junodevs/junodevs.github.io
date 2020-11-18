@@ -1,0 +1,2 @@
+build:
+	scarecrow make ./

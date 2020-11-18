@@ -1,0 +1,70 @@
+@font-face {
+	font-family: "Inconsolata";
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: normal;
+	font-display: swap;
+	src: url("./Inconsolata.woff2");
+}
+
+@font-face {
+	font-family: "Permanent Marker";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./PermanentMarker.woff2");
+}
+
+:root {
+	--body-font-face: "Inconsolata", "SFMono-Regular", Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+	--body-font-size: 23px;
+
+	--color-pink: #ff4bc9;
+	--color-cyan: #56e0ff;
+	--color-purple: #a19ee7;
+	--color-green: #5fdd9d;
+	--color-gray: #5d737e;
+	--color-white: #f8f8f8;
+	--color-black: #161925;
+
+	--color-foreground: #f8f8f8;
+	--color-background: #161925;
+}
+
+body {
+	background-color: var(--color-white);
+	font-family: var(--body-font-face);
+	color: var(--color-background);
+	font-size: var(--body-font-size);
+}
+
+.container {
+	padding-top: 1rem;
+	padding-left: 8rem;
+	padding-right: 8rem;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+header {
+	display: block;
+	text-align: center;
+	font-family: "Permanent Marker";
+	font-size: 40px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: var(--color-white);
+	background: var(--color-pink);
+	background: linear-gradient(90deg, rgba(255,75,201,1) 0%, rgba(160,159,231,1) 30%, rgba(149,168,235,1) 60%, rgba(86,224,255,1) 100%);
+}
+
+
+a {
+	color: var(--color-purple);
+	text-decoration: none;
+	border-bottom: var(--color-purple) solid 2px;
+}
+
+a:hover, a:focus {
+	border: none;
+}
